@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <ul>
+    {% for object in object_list %}
+            {% if object.title %}
+            <li>
+                <a href="">{{object.title}}-{{ object.content }}</a>
+            </li>
+        {% endif %}
+    {% endfor %}
+        </ul>
+{% endblock %}
